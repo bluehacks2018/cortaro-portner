@@ -1,2 +1,2 @@
-# cortaro-portner
-Blue Hacks 2018 Submission for Team "Cortaro Portner"
+# cortato-portner
+Blue Hacks 2018 Submission for Team "Cortato Portner"
