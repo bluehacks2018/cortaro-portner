@@ -1,0 +1,26 @@
+.centerDiv{
+	margin: auto;
+	width:40%;
+	position: relative;
+	  padding-top: 10%;
+}
+
+.centerDivContent{
+	text-align: center;
+	padding-top: 2%;
+}
+
+.centerImage{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#searchBox{
+	padding-top: 5%;
+}
+
+#googleCaption{
+	font-size: 100pt;
+}

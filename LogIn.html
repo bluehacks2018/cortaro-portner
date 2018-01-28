@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="Google.css">
+
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="floating.css">
+
+	    <title>Log In</title>
+	</head>
+
+	<body>
+		<form class="form-signin" style="width: 30%; margin: auto" onsubmit="return check()" action="Discover.html">
+			<div class="text-center mb-4">
+			  <img class="mb-4" src="logo_square.png" alt="" width="72" height="72">
+			  <h1 class="h3 mb-3 font-weight-normal">GoPondo</h1>
+			  <p>Let's start making the world a better place.</p>
+			</div>
+	  
+			<div class="form-label-group">
+			  <input type="text" id="uName" class="form-control" placeholder="Username" required autofocus>
+			  <label for="uName">Username</label>
+			</div>
+	  
+			<div class="form-label-group">
+			  <input type="password" id="password" class="form-control" placeholder="Password" required>
+			  <label for="password">Password</label>
+			</div>
+	  
+			<button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+			<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+
+
+		  </form>
+
+		<script>
+			window.onload = function () {
+				localStorage.setItem("currUserId", -1);
+				var userList = [];
+		    	userList.push({ 	'id'	: 	0, 
+		    						'name'	: 	"Winfred", 
+		    						'uName'	:   "Wisner",
+		    						'password'	:   "1234",
+		    						'currBal'	: 	0.00 });
+					
+
+				userList.push({ 	'id'	: 	1, 
+		    						'name'	: 	"Reiner", 
+		    						'uName'	:   "TagaUlan",
+		    						'password'	:   "password",
+		    						'currBal'	: 	0.00 });
+					
+
+				localStorage.setItem("userList", JSON.stringify(userList));
+			}
+
+			function check(){
+				finished = false;
+				while(!finished){
+					var uName = document.getElementById("uName").value;
+					var password = document.getElementById("password").value;
+
+					var userList = JSON.parse(localStorage.getItem("userList"));
+
+					for (var i = 0; i < userList.length; i++) {
+					   if(userList[i].uName == uName && userList[i].password == password){
+							localStorage.setItem("currUserId", i);
+							finished = true;
+							console.log("LOGGED WITH ID " + i);
+							break; 
+						}
+					}
+				}
+			}
+		</script>
+
+
+	</body>
+</html>

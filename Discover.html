@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Google.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Discover</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-white">
+		<img src="logo.png" alt="logo" style="height: 5rem; padding-left: 9%">
+	  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+	      <a class="nav-link" href="#" id="money">Php 0.00</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="Discover.html">Discover</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="DoTasks.html">Do Tasks</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" onclick="clearUser()" href="Home.html">Logout</a>
+	    </li>
+	  </ul>
+
+	</nav>
+
+	<div class="centerDiv" style="width: 80%; padding-top: 50px">
+		<h1>Discover people</h1>
+		<div class="row">
+		  <div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/aeta.jpeg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			  
+				<h4 class="card-title">Aeta</h4>
+				
+				<div class="progress">
+					<div id ="Aeta-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">The Aeta or Agta, are an indigenous people who live in scattered, isolated mountainous parts of the island of Luzon, the Philippines. These people are considered to be Negritos, whose skin ranges from dark to very dark brown, and possessing features such as a small stature and frame; hair of a curly to kinky texture and a higher frequency of naturally lighter colour (blondism) relative to the general population; small nose; and dark brown eyes. They are thought to be among the earliest inhabitants of the Philippines, preceding the Austronesian migrations.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+
+			    <button class="btn btn-lg btn-primary btn-block" onclick="setupModal(0)" data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+		  <div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/alzheimers.jpg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			  			  
+				<h4 class="card-title">John</h4>
+					
+				<div class="progress">
+					<div id ="John-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">Alzheimer's is the most common form of dementia, a general term for memory loss and other cognitive abilities serious enough to interfere with daily life. Alzheimer's disease accounts for 60 to 80 percent of dementia cases.  Alzheimer's is not a normal part of aging. The greatest known risk factor is increasing age, and the majority of people with Alzheimer's are 65 and older. But Alzheimer's is not just a disease of old age. Approximately 200,000 Americans under the age of 65 have younger-onset Alzheimer's disease (also known as early-onset Alzheimer's.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <button class="btn btn-lg btn-primary btn-block" onclick="setupModal(1)" data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+
+			<div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/blind.jpg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			    <h4 class="card-title">Juana</h4>
+							  			  
+				<div class="progress">
+					<div id ="Juana-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">Visual impairment, also known as vision impairment or vision loss, is a decreased ability to see to a degree that causes problems not fixable by usual means, such as glasses. Some also include those who have a decreased ability to see because they do not have access to glasses or contact lenses. Visual impairment is often defined as a best corrected visual acuity of worse than either 20/40 or 20/60. The term blindness is used for complete or nearly complete vision loss. Visual impairment may cause people difficulties with normal daily activities such as driving, reading, socializing, and walking.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <button class="btn btn-lg btn-primary btn-block"  onclick="setupModal(2)" data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+		  <div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/deaf.jpg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			    <h4 class="card-title">Hannah</h4>
+											  			  
+				<div class="progress">
+					<div id ="Hannah-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">A person who is not able to hear as well as someone with normal hearing thresholds of 25 dB or better in both ears is said to have hearing loss. Hearing loss may be mild, moderate, severe, or profound. It can affect one ear or both ears, and leads to difficulty in hearing conversational speech or loud sounds.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <button class="btn btn-lg btn-primary btn-block" onclick="setupModal(3)"  data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+
+			<div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/mangyan.jpg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			    <h4 class="card-title">Mangyan</h4>
+							  			  
+				<div class="progress">
+					<div id ="Mangyan-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">Mangyan is the generic name for the eight indigenous groups found on the island of Mindoro, southwest of the island of Luzon, the Philippines, each with its own tribal name, language, and customs. The total population may be around 280,000, but official statistics are difficult to determine under the conditions of remote areas, reclusive tribal groups and some having little if any outside world contact. The ethnic groups of the island, from north to south, are: Iraya, Alangan, Tadyawan, Tawbuid (called Batangan by lowlanders on the west of the island), Buhid, and Hanunoo. An additional group on the south coast is labelled Ratagnon. They appear to be intermarried with lowlanders. The group known on the east of Mindoro as Bangon may be a subgroup of Tawbuid, as they speak the 'western' dialect of that language. They also have a kind of poetry which is called the Ambahan.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <button class="btn btn-lg btn-primary btn-block" onclick="setupModal(4)"  data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+		  <div class="card" style="width: 20rem; margin: 0.5rem 1rem">
+			  <img class="card-img-top" src="pics/tboli.jpg" alt="Card image cap">
+			  <div class="card-block" style="padding: 1rem 1rem">
+			    <h4 class="card-title">Tboli</h4>
+											  			  
+				<div class="progress">
+					<div id ="Tboli-bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				
+			    <p class="card-text">The Tboli people are one of the indigenous peoples of South Cotabato in Southern Mindanao. The body of ethnographic and linguistic literature on Mindanao, they are variously known as Tboli, T'boli, TbÃ¶li, Tiboli, Tibole, Tagabili, Tagabeli, and Tagabulu. They term themselves Tboli or T'boli. Their whereabouts and identity are somewhat imprecise in the literature; some publications present the Tboli and the Tagabili as distinct peoples; some locate the Tbolis to the vicinity of the Lake Buluan in the Cotabato Basin or in Agusan del Norte. The Tbolis, then, reside on the mountain slopes on either side of the upper Alah Valley and the coastal area of Maitum, Maasim and Kiamba. In former times, the Tbolis also inhabited the upper Alah Valley floor. After World War II, i.e., since the arrival of settlers originating from other parts of the Philippines, they have been gradually pushed onto the mountain slopes. As of now, they are almost expelled from the fertile valley floor.</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <button class="btn btn-lg btn-primary btn-block" onclick="setupModal(5)"  data-toggle="modal" data-target="#myModal">Donate</button>  	
+			  </ul>
+			</div>
+	</div>
+
+
+	  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <label for="inputdefault">How much will you donate?</label>
+      		<input class="form-control" id="inputdefault" type="number">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="donate()" data-dismiss="modal">Confirm</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script type="text/javascript">
+	window.onload = function () {
+	    var peopleList = [];
+    	peopleList.push({ 	'id'	: 	0, 
+    						'name'	: 	"Aeta", 
+    						'desc'	: 	"The Aeta or Agta, are an indigenous people who live in scattered, isolated mountainous parts of the island of Luzon, the Philippines. These people are considered to be Negritos, whose skin ranges from dark to very dark brown, and possessing features such as a small stature and frame; hair of a curly to kinky texture and a higher frequency of naturally lighter colour (blondism) relative to the general population; small nose; and dark brown eyes. They are thought to be among the earliest inhabitants of the Philippines, preceding the Austronesian migrations.", 
+    						'currFunds'	: 	0.00, 
+							'goalFunds' :  10000.00,
+							'video' : "kn9NgqcHIpI",
+							'location' : "Isolated mountainrts in Luzon",
+							'category' : "Indigenous People"
+							});
+
+    	peopleList.push({ 	'id'	: 	1, 
+    						'name'	: 	"John", 
+    						'desc'	: 	"Alzheimer's is the most common form of dementia, a general term for memory loss and other cognitive abilities serious enough to interfere with daily life. Alzheimer's disease accounts for 60 to 80 percent of dementia cases.  Alzheimer's is not a normal part of aging. The greatest known risk factor is increasing age, and the majority of people with Alzheimer's are 65 and older. But Alzheimer's is not just a disease of old age. Approximately 200,000 Americans under the age of 65 have younger-onset Alzheimer's disease (also known as early-onset Alzheimer's.", 
+    						'currFunds'	: 	15000.00, 
+							'goalFunds' :  20000.00,
+							'video' : "yJXTXN4xrI8",
+							'location' : "Apayao",
+							'category' : "Person with Disability"});
+
+    	peopleList.push({ 	'id'	: 	2, 
+    						'name'	: 	"Juana", 
+    						'desc'	: 	"Visual impairment, also known as vision impairment or vision loss, is a decreased ability to see to a degree that causes problems not fixable by usual means, such as glasses. Some also include those who have a decreased ability to see because they do not have access to glasses or contact lenses. Visual impairment is often defined as a best corrected visual acuity of worse than either 20/40 or 20/60. The term blindness is used for complete or nearly complete vision loss. Visual impairment may cause people difficulties with normal daily activities such as driving, reading, socializing, and walking.", 
+    						'currFunds'	: 	5000.00, 
+							'goalFunds' :  20300.00,
+							'video' : "y5I59tXdZXg",
+							'location' : "Mountain Province",
+							'category' : "People with Disability"});
+
+    	peopleList.push({ 	'id'	: 	3, 
+    						'name'	: 	"Hannah", 
+    						'desc'	: 	"A person who is not able to hear as well as someone with normal hearing thresholds of 25 dB or better in both ears is said to have hearing loss. Hearing loss may be mild, moderate, severe, or profound. It can affect one ear or both ears, and leads to difficulty in hearing conversational speech or loud sounds.", 
+    						'currFunds'	:  6000.00,
+							'goalFunds' :  60000.00,
+							'video' : "ecmCHXZkTGI",
+							'location' : "Mountain Province",
+							'category': "People with Disability"});
+
+    	peopleList.push({ 	'id'	: 	4, 
+    						'name'	: 	"Mangyan", 
+    						'desc'	: 	"Mangyan is the generic name for the eight indigenous groups found on the island of Mindoro, southwest of the island of Luzon, the Philippines, each with its own tribal name, language, and customs. The total population may be around 280,000, but official statistics are difficult to determine under the conditions of remote areas, reclusive tribal groups and some having little if any outside world contact. The ethnic groups of the island, from north to south, are: Iraya, Alangan, Tadyawan, Tawbuid (called Batangan by lowlanders on the west of the island), Buhid, and Hanunoo. An additional group on the south coast is labelled Ratagnon. They appear to be intermarried with lowlanders. The group known on the east of Mindoro as Bangon may be a subgroup of Tawbuid, as they speak the 'western' dialect of that language. They also have a kind of poetry which is called the Ambahan.", 
+    						'currFunds'	: 	20000.00,
+							'goalFunds' :  40000.00,
+							'video' : "5GxFf0TS4b0",
+							'location' : "Mindoro",
+							'category': "Indigenous People"});
+
+    	peopleList.push({ 	'id'	: 	5, 
+    						'name'	: 	"Tboli", 
+    						'desc'	: 	"The Tboli people are one of the indigenous peoples of South Cotabato in Southern Mindanao. The body of ethnographic and linguistic literature on Mindanao, they are variously known as Tboli, T'boli, TbÃ¶li, Tiboli, Tibole, Tagabili, Tagabeli, and Tagabulu. They term themselves Tboli or T'boli. Their whereabouts and identity are somewhat imprecise in the literature; some publications present the Tboli and the Tagabili as distinct peoples; some locate the Tbolis to the vicinity of the Lake Buluan in the Cotabato Basin or in Agusan del Norte. The Tbolis, then, reside on the mountain slopes on either side of the upper Alah Valley and the coastal area of Maitum, Maasim and Kiamba. In former times, the Tbolis also inhabited the upper Alah Valley floor. After World War II, i.e., since the arrival of settlers originating from other parts of the Philippines, they have been gradually pushed onto the mountain slopes. As of now, they are almost expelled from the fertile valley floor.", 
+    						'currFunds'	: 	200.00,
+							'goalFunds' :  20000.00,
+							'video' : "FgE94-jkL7Y",
+							'location' : "South Cotabato",
+							'category': "Indigenous People"}); 
+		
+		localStorage.setItem("peopleList", JSON.stringify(peopleList));	
+		
+    	console.log(localStorage.peopleList);
+		
+		var i;
+		for(i = 0; i < peopleList.length; i++){
+			console.log("ID NUMBER" + i);
+			console.log("ID NAME : " + peopleList[i].name);
+			var thebar = peopleList[i].name + "-bar";
+			console.log("BAR NAME: " + thebar);
+			var newVal = peopleList[i].currFunds / peopleList[i].goalFunds * 100;
+			console.log("NEW VAL: " + newVal + "\n");
+			document.getElementById(thebar).innerHTML = Math.floor(newVal) + "%";
+			if(newVal > 10){
+				document.getElementById(thebar).style.width = newVal + "%";
+			}else{
+				document.getElementById(thebar).style.width = "10%";
+			}
+			
+			//document.getElementById(thebar).aria-valuenow = newVal;
+
+		}	
+    	var temp = JSON.parse(localStorage.getItem("userList"));
+		
+		var idUser = localStorage.getItem("currUserId");
+		
+		var money = temp[idUser].currBal;
+		
+		document.getElementById('money').innerHTML = "Php " + money + ".00";
+		
+    	console.log(temp);
+
+    	console.log(temp[0]);
+		
+		
+	}
+
+	function donate(){
+		var id = localStorage.currPeople;
+
+		var donation = document.getElementById('inputdefault').value;
+		var tempList = JSON.parse(localStorage.getItem("peopleList"));
+		console.log(tempList);
+		var temp = tempList[id];
+		console.log(temp.currFunds);
+		temp.currFunds = +temp.currFunds + +donation;
+		localStorage.setItem("peopleList", JSON.stringify(tempList));
+
+		console.log(tempList);
+		console.log("done");
+	}	
+
+	function setupModal(id){	
+
+		localStorage.setItem("currPeople", id);
+
+		var tempList = JSON.parse(localStorage.getItem("peopleList"));
+		temp = tempList[id];
+		console.log("TANGINA");
+		console.log(temp);
+
+		console.log("asdf");
+		console.log(temp.name);
+
+		document.getElementById('titleModal').value(temp.name);
+
+
+	}
+
+	function clearUser(){
+		localStorage.removeItem("currUserId");
+	}
+  </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
